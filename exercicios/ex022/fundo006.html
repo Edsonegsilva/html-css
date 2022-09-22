@@ -8,18 +8,30 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
+          /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            
+              simplificando o background com shorthand 
+              obedecendo a ordem temos:
+
+              background-color image position repeat (size ainda não funciona) 
+              attachment*/
+
+              background: black url('imagens/wallpaper002.jpg')
+              center center no-repeat fixed;
+              background-size: cover;/*declarando separado do shorthand*/
+
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
-            border: 1px solid darkblue;
+            border: 3px solid red;
             border-radius: 15px;
         }
     </style>
@@ -90,7 +102,20 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora 
              incidunt repudiandae ipsum reiciendis? Quia, est voluptate voluptatem
               at reprehenderit sint officiis qui quidem atque molestias inventore 
+              labore fuga consectetur harum!
+
+              
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora 
+             incidunt repudiandae ipsum reiciendis? Quia, est voluptate voluptatem
+              at reprehenderit sint officiis qui quidem atque molestias inventore 
+              labore fuga consectetur harum!
+              
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora 
+             incidunt repudiandae ipsum reiciendis? Quia, est voluptate voluptatem
+              at reprehenderit sint officiis qui quidem atque molestias inventore 
               labore fuga consectetur harum!]
+ 
+             
  
              
               
