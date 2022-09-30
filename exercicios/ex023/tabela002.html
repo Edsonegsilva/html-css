@@ -15,17 +15,26 @@
         }
         td, th{
             border: 1px solid black;
+            padding: 10p
+        }
+        caption{
+            font-size: 1em;
+            font-weight: bold;
             padding: 10px;
-        }
-        thead{
-            background-color: rgb(6, 6, 99);
-            color: white;
-        }
-        tfoot{
-            background-color: rgb(6, 6, 99);
-            color: white;
+            background-color: lightgray;
 
         }
+        thead , tfoot{
+            background-color: rgb(6, 6, 99);
+            color: white;
+        }
+        tbody > tr:nth-child(odd){/*odd ou 2n-1 linha impar*/
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){/*even ou 2n linha par*/
+            background-color: lightgrey;
+        }
+        
         td.num{
             text-align: right;
         }
@@ -37,6 +46,7 @@
     <!--
         Estrutura de Tabelas Grandes
             table
+               caption
                 thead
                     tr td th
                 tbody
@@ -45,9 +55,10 @@
                     tr td th
     -->
         <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
-                    <th>Estado</th> <th>População</th>
+                    <th scope="col">Estado</th> <th scope="col" style="width: 100px">População</th>
                 </tr>
 
             </thead>
@@ -141,7 +152,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th> <td class="num"><strong>210.147.225</strong></td>
+                    <th scope="row">Total de Habitantes</th> <td class="num"><strong>210.147.225</strong></td>
                 </tr>
 
             </tfoot>
